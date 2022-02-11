@@ -1,0 +1,70 @@
+.inputField {
+	position: relative;
+	width: 250px;
+	height: 44px;
+	line-height: 44px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #d3d3d3;
+	transition: 0.3s all;
+	cursor: text;
+}
+
+.input {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	padding: 0.5rem 0;
+	border-bottom: 2px solid #d3d3d3;
+	box-shadow: none;
+	color: rgb(255, 255, 255);
+	background: black;
+	position: relative;
+	font-size: 16px;
+}
+
+.input:focus {
+	color: white;
+	border-color: #00dd22;
+	border-right: 260px;
+	transition: 0.4s;
+}
+.input:focus ~ .label {
+	font-size: 14px;
+	top: -24px;
+	color: #00dd22;
+	transition: 0.4s;
+}
+
+.labelActive {
+	position: absolute;
+	font-size: 14px;
+	left: 0;
+	top: -24px;
+	color: #00dd22;
+	transition: 0.6s;
+}
+
+.removeIcon {
+	position: absolute;
+	top: 13px;
+	right: 0px;
+	color: rgba(255, 59, 59, 0.829);
+	font-size: 22px;
+	cursor: pointer;
+	z-index: 2;
+	background-color: rgb(0, 0, 0);
+	padding-left: 5px;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
